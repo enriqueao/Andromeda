@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import pyttsx
 import speech_recognition as sr
-from SimpleCV import *
+#from SimpleCV import *
 
 def hablar(texto):
     engine = pyttsx.init()
@@ -28,7 +28,7 @@ def escuchar():
         # to use another API key, use `r.recognize_google(audio, key="GOOGLE_SPEECH_RECOGNITION_API_KEY")`
         # instead of `r.recognize_google(audio)`
         print("You said: " + r.recognize_google(audio))
-        hablar('Bienvenido '+r.recognize_google(audio)+' soy Androme da, y sere tu asistente')
+        hablar('Bienvenido '+r.recognize_google(audio)+', soy Androme da, y sere tu asistente')
     except sr.UnknownValueError:
         hablar('no he podido entenderte, intenta de nuevo')
         escuchar()
