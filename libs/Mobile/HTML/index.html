@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no" >
+		<link rel="stylesheet" href="../CSS/estilos.css" type="text/css">
+		<script type="text/javascript" src="../JS/funciones.js"></script>
+	</head>
+	<body id="body">
+	<div id="background"></div>
+		<div id="andromeda">
+			<img src="../SRC/logo11.png" alt="">
+			<h1>Andromeda</h1>
+		</div>
+		<div id="login">
+			<input type="text" id="usuario" placeholder="Usuario">
+			<input type="password" id="contrasena" placeholder="Contraseña">
+			<button onclick="login()">Entrar</button>
+			<button onclick="irARegistro()" id="desp">¿No tienes cuenta? Regístrate</button>
+		</div>
+		<div id="registro">
+			<input type="text" id="user" placeholder="Usuario">
+			<input type="text" id="password" placeholder="Contraseña">
+			<input type="text" id="confirm" placeholder="Confirmar contraseña">
+			<button onclick="signup()">Regístrame</button>
+			<button onclick="irALogin()" id="desp">¿Ya tienes cuenta? Ingresa</button>
+		</div>
+	</body>
+</html>

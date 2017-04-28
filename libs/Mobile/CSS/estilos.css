@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Poppins, 'Sans-serif';
+	overflow-y: hidden;
+}
+
+@media only screen and (orientation:portrait){
+	#background:before{
+		content: "";
+		position: fixed;
+		z-index: -1;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-image: url(../SRC/to-do.jpg);
+		background-position: -275px 0px;
+		background-size: cover;
+		-webkit-filter: blur(3px) grayscale(50%) !important;
+	}
+
+	#andromeda{
+		top: 0px;
+		left: 0px;
+		height: 40%;
+		width: 100%;
+		color: #4AAFFF;
+	}
+		#andromeda>h1{
+			text-align: center;
+			margin-left: 25%;
+			width: 50%;
+			z-index: 99;
+		}
+		#andromeda>img{
+			height: 30%;
+			width: 50%;
+			margin-top: 10%;
+			margin-left: 25%;
+		}
+
+	#login{
+		margin-top: 10%;
+		height: 50%;
+		width: 100%;
+		font-size: 1.2em;
+		color: white;
+		transition: .5s all;
+	}
+		#login>input, #login>button{
+			background: #3C5CA1;
+			outline: none;
+			border: 2px solid #3C5CA1;
+			border-radius: 50px;
+			margin-left: 10%;
+			width: 80%;
+			height: 50px;
+			font-size: 1.2em;
+			color: #6a9ad4;
+			margin-top: 5px;
+		}
+		#login>input{
+			padding-left: 15px;
+			padding-right: 15px;
+			color: #ccc;
+		}
+		#login>button{
+			background: #3c5ca1;
+			font-weight: bolder;
+		}
+		::-webkit-input-placeholder{
+			color: #6a9ad4;
+			text-align: center;
+		}
+		#login>#desp{
+			border: none;
+			font-size: .8em;
+			background: transparent;
+		}
+
+	#registro{
+		margin-top: 100%;
+		height: 50%;
+		width: 100%;
+		font-size: 1.2em;
+		color: white;
+		transition: .5s all;
+	}
+		#registro>input, #registro>button{
+			background: #3C5CA1;
+			outline: none;
+			border: 2px solid #3C5CA1;
+			border-radius: 50px;
+			margin-left: 10%;
+			width: 80%;
+			height: 50px;
+			font-size: 1.2em;
+			color: #6a9ad4;
+			margin-top: 5px;
+		}
+		#registro>input{
+			padding-left: 15px;
+			padding-right: 15px;
+			color: #ccc;
+		}
+		#registro>button{
+			background: #3c5ca1;
+			font-weight: bolder;
+		}
+		#registro>#desp{
+			border: none;
+			font-size: .8em;
+			background: transparent;
+		}
+		.navbar{
+			height: 50px;
+			width: 100%;
+			background: #2b2b2b;
+			color: #ccc;
+		}
+
+			.navbar>button{
+				height: 50px;
+				width: 50px;
+				background: #4d4d4d;
+				border: none;
+				outline: none;
+				top: 0px !important;
+				left: 0px;
+				float: left;
+			}
+				.navbar>button img{
+					height: 80%;
+					width: 80%;
+					/*-webkit-filter:invert(100%);*/
+				}
+
+			#logo{
+				height: 100%;
+				width: 100px;
+				top: 10%;
+				margin-left: 10%;
+				display: inline;
+				float: left;
+			}
+
+			.navbar>h2{
+				display: inline;
+				height: 80%;
+				width: 50%;
+				float: left;
+				margin-top: 5px;
+				margin-left: -5%;
+			}
+}
+
+@media only screen and (orientation:landscape){
+	#background:before{
+		content: "";
+		position: fixed;
+		z-index: -1;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-image: url(../SRC/to-do.jpg);
+		background-position: 0px 0px;
+		background-size: cover;
+		-webkit-filter: blur(3px) grayscale(50%) !important;
+	}
+
+	#andromeda{
+		top: 0px;
+		left: 0px;
+		height: 35%;
+		width: 100%;
+		color: #4AAFFF;
+	}
+		#andromeda>h1{
+			visibility: hidden;
+		}
+		#andromeda>img{
+			height: 80%;
+			width: 40%;
+			margin-top: 2%;
+			margin-left: 30%;
+		}
+
+	#login{
+		height: 60%;
+		width: 100%;
+		font-size: 1.2em;
+		color: white;
+		transition: .5s all;
+	}
+		#login>input, #login>button{
+			background: #3C5CA1;
+			outline: none;
+			border: 2px solid #3C5CA1;
+			border-radius: 50px;
+			margin-left: 10%;
+			width: 80%;
+			height: 50px;
+			font-size: 1.2em;
+			color: #6a9ad4;
+			margin-top: 5px;
+		}
+		#login>input{
+			padding-left: 15px;
+			padding-right: 15px;
+			color: #ccc;
+		}
+		#login>button{
+			background: #3c5ca1;
+			font-weight: bolder;
+		}
+		::-webkit-input-placeholder{
+			color: #6a9ad4;
+			text-align: center;
+		}
+		#login>#desp{
+			border: none;
+			font-size: .8em;
+			background: transparent;
+		}
+
+	#registro{
+		margin-top: 100%;
+		height: 70%;
+		width: 100%;
+		font-size: 1.2em;
+		color: white;
+		transition: .5s all;
+	}
+		#registro>input, #registro>button{
+			background: #3C5CA1;
+			outline: none;
+			border: 2px solid #3C5CA1;
+			border-radius: 50px;
+			margin-left: 10%;
+			width: 80%;
+			height: 50px;
+			font-size: 1.2em;
+			color: #6a9ad4;
+			margin-top: 5px;
+		}
+		#registro>input{
+			padding-left: 15px;
+			padding-right: 15px;
+			color: #ccc;
+		}
+		#registro>button{
+			background: #3c5ca1;
+			font-weight: bolder;
+		}
+		#registro>#desp{
+			border: none;
+			font-size: .8em;
+			background: transparent;
+		}
+
+		.navbar{
+			height: 50px;
+			width: 100%;
+			background: #2b2b2b;
+			color: #ccc;
+		}
+
+			.navbar>button{
+				height: 50px;
+				width: 50px;
+				background: #4d4d4d;
+				border: none;
+				outline: none;
+				top: 0px !important;
+				left: 0px;
+				float: left;
+			}
+				.navbar>button img{
+					height: 80%;
+					width: 80%;
+					/*-webkit-filter:invert(100%);*/
+				}
+
+			#logo{
+				height: 100%;
+				width: 100px;
+				top: 10%;
+				margin-left: 25% !important;
+				display: inline;
+				float: left;
+			}
+
+			.navbar>h2{
+				display: inline;
+				height: 80%;
+				width: 50%;
+				float: left;
+				margin-top: 5px;
+				margin-left: 1%!important;
+			}
+}
+
+.hideLogin{
+	margin-top: -100% !important;
+	transition: .5s all;
+}
+
+.showRegistro{
+	margin-top: 30% !important;
+	transition: .5s all;
+}
+
+.hideLoginLand{
+	margin-top: -50% !important;
+	transition: .5s all;
+}
+
+.showRegistroLand{
+	margin-top: 12% !important;
+	transition: .5s all;
+}
+
+.navbar{
+	height: 50px;
+	width: 100%;
+	background: #2b2b2b;
+	color: #ccc;
+}
+
+	.navbar>button{
+		height: 50px;
+		width: 50px;
+		background: #4d4d4d;
+		border: none;
+		outline: none;
+		top: 0px !important;
+		left: 0px;
+		float: left;
+	}
+		.navbar>button img{
+			height: 80%;
+			width: 80%;
+			/*-webkit-filter:invert(100%);*/
+		}
+
+	#logo{
+		height: 100%;
+		width: 100px;
+		top: 10%;
+		margin-left: 10%;
+		display: inline;
+		float: left;
+	}
+
+	.navbar>h2{
+		display: inline;
+		height: 80%;
+		width: 50%;
+		float: left;
+		margin-top: 5px;
+		margin-left: -5%;
+	}

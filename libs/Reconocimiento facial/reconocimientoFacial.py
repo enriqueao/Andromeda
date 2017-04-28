@@ -23,7 +23,7 @@ for (subdirs, dirs, files) in os.walk(fn_dir):
 # Crear una matriz Numpy de las dos listas anteriores
 (images, lables) = [numpy.array(lis) for lis in [images, lables]]
 # OpenCV entrena un modelo a partir de las imagenes
-model = cv2.face.createEigenFaceRecognizer()
+model = cv2.createFisherFaceRecognizer()
 model.train(images, lables)
 # Part 2: Utilizar fisherRecognizer en funcionamiento la camara
 haar_cascade = cv2.CascadeClassifier(fn_haar)
