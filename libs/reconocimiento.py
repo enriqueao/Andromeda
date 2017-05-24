@@ -1,18 +1,15 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import pyttsx
+from gtts import gTTS
+from playsound import playsound
 import speech_recognition as sr
 #from SimpleCV import *
 
 def hablar(texto):
-    engine = pyttsx.init()
-    voices = engine.getProperty('voices')
-    rate = engine.getProperty('rate')
-    engine.setProperty('rate', rate-40)
-    engine.setProperty('voice', voices[2].id)
-    engine.say(texto)
-    # engine.say('Hola Bienvenido, Comencemos yo soy Andromeda tu asistente en la seguridad, dime tu nombre para poder comenzar.')
-    engine.runAndWait()
+    tts = gTTS(text=texto, lang='es-us')
+    file = 'sample.mp3'
+    tts.save(file)
+    playsound('sample.mp3')
 
 # Record Audio
 def escuchar():
