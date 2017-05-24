@@ -39,7 +39,7 @@ def continuousSpeech():
 	config = Decoder.default_config()
 	config.set_string('-hmm', os.path.join(modeldir, 'es_ES\\es_ES\\model_parameters\\voxforge_es_sphinx.cd_ptm_4000'))
 	config.set_string('-dict', os.path.join(modeldir, 'es_ES\\es_ES\\es.dict'))
-	config.set_string('-keyphrase', 'a')
+	config.set_string('-keyphrase', 'andromeda')
 	config.set_float('-kws_threshold', 1e-1)
 
 	# Read from microphone
