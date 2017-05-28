@@ -15,3 +15,5 @@ Cuando Andrómeda te dice uno de tus recordatorios podrás posponerlo o descarta
 		Andrómeda pospondrá tu recordatorio por 10 minutos.
 	Descartar:
 		Andrómeda marcará tu recordatorio como 'Completado'.
+	Eliminar:
+		Andrómeda marcará el recordatorio como 'Eliminado'.
