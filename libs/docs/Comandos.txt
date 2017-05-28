@@ -1,0 +1,17 @@
+Di "Andrómeda" para iniciar.
+
+Comandos Andrómeda:
+	Di/Dime todos los recordatorios:
+		Andrómeda te dirá todos los recordatorios pendientes y su fecha y hora a la que están programados.
+	Di/Dime los recordatorios de hoy:
+		Andrómeda te dirá los recordatorios pendientes para el día de hoy y la hora a la que se deben recordar.
+	Di/Dime tu ID:
+		Andrómeda te dirá su ID de dispositivo para que puedas ingresar a tu Andrómeda Mobile.
+	Salir:
+		Termina la ejecución de Andrómeda Home
+
+Cuando Andrómeda te dice uno de tus recordatorios podrás posponerlo o descartarlo con los siguientes comandos:
+	Posponer:
+		Andrómeda pospondrá tu recordatorio por 10 minutos.
+	Descartar:
+		Andrómeda marcará tu recordatorio como 'Completado'.

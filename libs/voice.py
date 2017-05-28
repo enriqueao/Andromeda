@@ -82,8 +82,16 @@ def continuousSpeech(id_user):
 						cur.execute("UPDATE andromeda_recordatorios SET idEstadoRecordatorio = 3 WHERE idRecordatorio = '"+str(row[0])+"'")
 						talk("Recordatorio descartado", "descartado"+str(aud))
 						conn.commit()
-					elif speech.find("descartgr") != -1:
+					elif speech.find("descargar") != -1:
 						cur.execute("UPDATE andromeda_recordatorios SET idEstadoRecordatorio = 3 WHERE idRecordatorio = '"+str(row[0])+"'")
+						talk("Recordatorio descartado", "descartado"+str(aud))
+						conn.commit()
+					elif speech.find("eliminar") != -1:
+						cur.execute("UPDATE andromeda_recordatorios SET idEstadoRecordatorio = 2 WHERE idRecordatorio = '"+str(row[0])+"'")
+						talk("Recordatorio descartado", "descartado"+str(aud))
+						conn.commit()
+					elif speech.find("Eliminar") != -1:
+						cur.execute("UPDATE andromeda_recordatorios SET idEstadoRecordatorio = 2 WHERE idRecordatorio = '"+str(row[0])+"'")
 						talk("Recordatorio descartado", "descartado"+str(aud))
 						conn.commit()
 					elif speech.find("Posponer") != -1:
