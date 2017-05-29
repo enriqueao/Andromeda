@@ -18,6 +18,7 @@ datadir = "C:\Python27\Lib\site-packages\pocketsphinx\data"
 aud=0
 sels = 0
 al = 0
+idd = 0
 
 def continuousSpeech(id_user):
 	global aud
@@ -159,15 +160,18 @@ def action(command):
 		exit()
 
 def say(command):
+	global idd
 	if command.find('recordatorios de hoy') != -1:
 		dia = time.strftime("%Y-%m-%d")
 		select_recordatorios_dia(id_user, dia)
 	elif command.find('todos') != -1:
 		select_todos_recordatorios(id_user)
 	elif command.find('tu id') != -1:
-		talk("El ID de tu dispositivo andromeda es: "+str(andromeda_id))
+		talk("El ID de tu dispositivo andromeda es: "+str(andromeda_id), "id"+str(idd))
+		idd += 1
 	elif command.find('tu ID') != -1:
-		talk("El ID de tu dispositivo andromeda es: "+str(andromeda_id), "id")
+		talk("El ID de tu dispositivo andromeda es: "+str(andromeda_id), "id"+str(idd))
+		idd += 1
 	
 
 def conectar():
@@ -212,8 +216,8 @@ def select_todos_recordatorios(id_user):
 			date = (". El "+dy+", "+str(day)+" de "+month+" de dos mil"+str(year))
 			hr, mins, segs = convert_timedelta(row[1])
 			strtime = ". A las"+str(hr)+" horas, con "+str(mins)+" minutos"
-			talk(row[0]+date+strtime, "all"+str(al))
-	al = al+1
+			talk(row[0]+date+strtime, "alla"+str(al))
+			al = al+1
 
 def get_year(year):
 	return{
@@ -252,7 +256,7 @@ def get_month(month):
 
 def get_weekday(day):
 	return{
-		7 : "Lunes",
+		0 : "Lunes",
 		1 : "Martes",
 		2 : "Miercoles",
 		3 : "Jueves",
